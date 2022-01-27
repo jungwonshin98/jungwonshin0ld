@@ -147,6 +147,181 @@ br {
   padding-top: 140px;
 }
 
+/*---------------------------------------
+    Preloader section              
+-----------------------------------------*/
+/* 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.sk-spinner-wordpress.sk-spinner {
+  background-color: #bdc3c7;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: relative;
+  -webkit-animation: sk-innerCircle 1s linear infinite;
+  animation: sk-innerCircle 1s linear infinite; 
+}
+
+.sk-spinner-wordpress .sk-inner-circle {
+  display: block;
+  background-color: #ffffff;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border-radius: 8px;
+  top: 5px;
+  left: 5px; 
+}
+
+@-webkit-keyframes sk-innerCircle {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes sk-innerCircle {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } } */
+            .body {
+              margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, silver, teal);
+            }
+            .loader {
+              width: 16em;
+              height: 8em;
+              position: relative;
+              overflow: hidden;
+          }
+            .loader::before,
+.loader::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+}
+
+.loader::before {
+    width: inherit;
+    height: 0.2em;
+    background-color: hsla(0, 0%, 85%);
+}
+
+.loader::after {
+    box-sizing: border-box;
+    width: 50%;
+    height: inherit;
+    border: 0.2em solid hsla(0, 0%, 85%);
+    border-radius: 50%;
+    left: 25%;
+}
+
+.loader span {
+    position: absolute;
+    width: 5%;
+    height: 10%;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 0.2em;
+    left: -5%;
+    animation: 3s linear infinite;
+    transform-origin: 50% -3em;
+    animation-name: run, rotating;
+}
+
+.loader span:nth-child(2) {animation-delay: 0.1s;}
+.loader span:nth-child(3) {animation-delay: 0.2s;}
+
+@keyframes run {
+    0% {left: -5%;}
+    10%, 60% {left: calc((100% - 5%) / 2);}
+    70%, 100% {left: 100%;}
+}
+
+@keyframes rotating {
+    0%, 10% {transform: rotate(0deg);}
+    60%, 100% {transform: rotate(-1turn);}
+}
+
+/* 
+            @keyframes tipsy {
+              0 {
+                transform: translateX(-50%) translateY(-50%) rotate(0deg);
+              }
+              100% {
+                transform: translateX(-50%) translateY(-50%) rotate(360deg);
+              }
+            }
+            
+            
+            a.preloader {
+              color: #fffbf1;
+              text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+              font-size: 60px;
+              font-weight: bold;
+              text-decoration: none;
+              letter-spacing: -3px;
+              margin: 0;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translateX(-50%) translateY(-50%);
+              text-align: center;
+            }
+            
+            a:before.preloader,
+            a:after.preloader {
+              content: '';
+              padding: .9em .4em;
+              position: absolute;
+              left: 50%;
+              width: 100%;
+              top: 50%;
+              display: block;
+              border: 15px solid #7eb8a7;
+            ;
+              transform: translateX(-50%) translateY(-50%) rotate(0deg);
+              animation: 10s infinite alternate ease-in-out tipsy;
+            }
+            
+            a:before.preloader {
+              border-color: #7eb8a7 #7eb8a7 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+              z-index: -1;
+            }
+            
+            a:after.preloader {
+              border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #7eb8a7 #7eb8a7;
+              box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+            }
+
+      .loaded {
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+      } */
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -428,7 +603,7 @@ br {
   /* text-transform: capitalize; */
   color: #545557;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 1.3em;
 }
 
 .hero-content p {

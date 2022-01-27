@@ -1,9 +1,9 @@
 
  /* jQuery Pre loader
   -----------------------------------------------*/
-  $(window).load(function(){
-    $('.preloader').fadeOut(100000); // set duration in brackets    
-});
+//   $(window).load(function(){
+//     $('.preloader').fadeOut(1000); // set duration in brackets    
+// });
 
 
  /* Google Map
@@ -144,6 +144,11 @@ $(document).ready(function() {
 $(document).ready(function(){
             
     "use strict";
+//     setTimeout(function(){
+// $('.preloader').addClass('loaded');
+//     }, 5000);
+    // $('.loader').fadeOut(5000);
+    $('.body').fadeOut(3000);
 
     $('.menu-container').each(function(index) {
         $(this).find('.circle').attr('menu-link', index);
