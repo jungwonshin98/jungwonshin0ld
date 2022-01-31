@@ -12,9 +12,12 @@ body {
   background: #ffffff;
   color: #5a5a5a;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 15px;
+  /* font-size: 15px; */
   font-weight: 300;
-  line-height: 20px;
+  /* line-height: 20px; */
+
+  font-size: 1.05em;
+  line-height: 1.4em;
   overflow-x: hidden;
   margin: 0 auto;
   padding: 0;
@@ -55,9 +58,11 @@ a:hover {
 p {
   margin: 15px 0;
   padding: 0;
-  font-size: 15px;
+  /* font-size: 15px; */
   color: #5a5a5a;
-  line-height: 24px;
+  font-size: 1.05em;
+  line-height: 1.4em;
+  /* line-height: 24px; */
 }
 
 br {
@@ -112,7 +117,7 @@ br {
   border: 1px solid #999;
   border-radius: 0;
   color: #999999;
-  font-size: resumepx;
+  font-size: 12px;
   font-weight: 500;
   height: 50px;
   letter-spacing: 0.1em;
@@ -386,6 +391,11 @@ br {
   opacity: 1;
 }
 
+p.copyrights {
+  font-size: 15px;
+  line-height: 24px;
+
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -745,7 +755,11 @@ a.email:hover{
 
   /* background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);; */
 }
+p.email{
+  font-size: 15px;
+  line-height: 1.1em;
 
+}
 @media (-webkit-min-device-pixel-ratio:0) {
   a.gradient {
     background-color: #96c7b8;
@@ -1052,8 +1066,8 @@ rgb(131, 198, 255) 50%,
 }
 
 .services-slider .swiper-pagination .swiper-pagination-bullet {
-  width: resumepx;
-  height: resumepx;
+  width: 12px;
+  height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #7eb8a7;
@@ -1104,15 +1118,15 @@ rgb(131, 198, 255) 50%,
 
 #portfolio .portfolio-item {
   margin-bottom: 30px;
-  padding: 0;
   position: relative;
 }
 
 #portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 100%;
+  left: 0;
   right: 0;
   bottom: 0;
   left: 50%;
@@ -1126,7 +1140,6 @@ rgb(131, 198, 255) 50%,
   color: #ffffff;
   text-align: center;
   background: rgb(77, 77, 77);
-  vertical-align: middle;
   padding-top: 5em;
 }
 
@@ -1150,7 +1163,6 @@ rgb(131, 198, 255) 50%,
   top: 50%;
   left: 50%;
   color: #ffffff;
-
 }
 
 /* #portfolio .portfolio-item:hover{
@@ -1171,18 +1183,23 @@ rgb(131, 198, 255) 50%,
   padding-top: 50px;
 }
 
+.center {
+margin:auto;
+width: 50%;
+}
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 80%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  /* font-family: "Open Sans"; */
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: resumepx;
-  height: resumepx;
+  width: 12px;
+  height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #7eb8a7;
@@ -1190,8 +1207,12 @@ rgb(131, 198, 255) 50%,
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #7eb8a7;
+  /* color: #7eb8a7; */
 }
 
+.swiper-button-left {
+  background-color: #7eb8a7;
+}
 .portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(75, 74, 74, 0.08);
@@ -1232,8 +1253,7 @@ rgb(131, 198, 255) 50%,
 .portfolio-details h1,
 h2,
 h3,
-h4,
-h5 {
+h4 {
   font-family: "Rubik";
 }
 
@@ -1243,23 +1263,24 @@ h5 {
 }
 
 .portfolio-details h2 {
-  color: #505050;
+  color: #6e6e6e;
   font-size: 2.2em;
   margin-bottom: .8em;
 }
 
 .portfolio-details h3 {
-  color: #636363;
+  color: #6e6e6e;
   font-weight: 500;
-  font-size: 2em;
+  font-size: 1.9em;
   margin-bottom: .6em;
 }
 
 .portfolio-details h4 {
-  color: #636363;
+  color: #6e6e6e;
   font-size: 1.6em;
   font-weight: 400;
-  margin-bottom: .4em;
+  margin-top:.4em;
+  margin-bottom: .3em;
 }
 
 .portfolio-details h5 {
@@ -1269,6 +1290,10 @@ h5 {
   margin-bottom: .2em;
 }
 
+.portfolio-details h6 {
+  font-size: 1.1em;
+
+}
 h4.project-info {
   font-size: 15pt;
   color: #898989;
@@ -1287,6 +1312,30 @@ h4.project-info {
   margin-bottom: 3em;
 }
 
+.portfolio-project img {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+img.persona1 {
+  min-width: 350px;
+  max-height: 340px; 
+  border-radius: 10px;
+}
+
+img.persona2 {
+  min-width: 350px;
+  max-height: 240px; 
+  border-radius: 10px;
+}
+
+.portfolio-project p{
+  line-height: 1.5em;
+}
+p.center {
+  font-size: .9em;
+  text-align: center;
+}
 ol,
 ul {
   line-height: 26px;
@@ -1301,7 +1350,82 @@ li {
   float: left;
 }
 
+ul.circle li {
+  list-style-type: circle;
+}
 
+img.img-fit {
+max-height: 380px;
+/* min-height: 300px; */
+width: auto;  
+display: inline-block;
+}
+
+p.text-small {
+  font-size: 15px;
+  /* width: auto; */
+  display: inline-block;
+}
+@media (min-width: 620px) and (max-width: 927px) {
+  .col-lg-6 {
+    width: 100%;
+  }
+  .col-md-8 {
+    width: 100%;
+  }
+  img.img-fit {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+p.text-small {
+  flex: 0 0 auto;
+  width: 100%;}
+}
+  
+.portfolio-project br{
+    content: "";
+    margin: .5em;
+    display: block;
+  
+}
+
+.portfolio-project a{
+  margin-top: 1em;
+  margin-bottom: .5em;
+  /* padding-top: 2em; */
+  color: #7eb8a7;
+  transition: .2s;
+}
+
+.portfolio-project a:hover{
+  color: hotPink;
+  /* font-weight: 400; */
+}
+
+.collapsible {
+  background-color: transparent; 
+  color: #7eb8a7;
+  border: none;
+  text-align: left;
+  border-radius: 5px;
+  margin: 10px 0;
+  margin-bottom: 1em;
+}
+
+.collapsible:hover {
+color: hotpink;
+}
+
+.active {
+  color: #7eb8a7;
+}
+.collapsible-text {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 15px;
+}
 /*--------------------------------------------------------------
 # Journal
 --------------------------------------------------------------*/
