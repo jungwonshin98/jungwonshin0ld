@@ -396,6 +396,7 @@ p.copyrights {
   line-height: 24px;
 
 }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -717,9 +718,9 @@ p.copyrights {
   font-size: 15px;
 }
 
-.hero-content .list-social li i:hover{
+.hero-content .list-social li i:hover {
   color: #7eb8a7;
-    font-size: 15px;
+  font-size: 15px;
 }
 
 span.highlight {
@@ -742,24 +743,28 @@ a.gradient {
 a:hover.gradient {
   color: rgb(253, 128, 191);
 }
+
 a.email {
 
-color:   #96c7b8;
-display: inline-block;
+  color: #96c7b8;
+  display: inline-block;
   position: relative;
   -webkit-transition: .4s;
   transition: .4s;
 }
-a.email:hover{
+
+a.email:hover {
   color: rgb(253, 128, 191);
 
   /* background-image: -webkit-linear-gradient(left, hotPink 0%, orange 50%, transparent 50%);; */
 }
-p.email{
+
+p.email {
   font-size: 15px;
   line-height: 1.1em;
 
 }
+
 @media (-webkit-min-device-pixel-ratio:0) {
   a.gradient {
     background-color: #96c7b8;
@@ -923,9 +928,10 @@ rgb(131, 198, 255) 50%,
   /* font-weight: 400; */
 }
 
-#about .about-descr .p-heading2 span{
+#about .about-descr .p-heading2 span {
   font-weight: 400;
 }
+
 #about .about-descr .separator {
   max-width: 80%;
   margin-bottom: 0;
@@ -967,7 +973,7 @@ rgb(131, 198, 255) 50%,
 
 .btn-resume span {
   background: #7eb8a7;
-  background: linear-gradient(0deg, #617c9685 0%, #7eb8a7  100%);
+  background: linear-gradient(0deg, #617c9685 0%, #7eb8a7 100%);
   display: block;
   position: absolute;
   width: 130px;
@@ -1143,6 +1149,13 @@ rgb(131, 198, 255) 50%,
   padding-top: 5em;
 }
 
+@media (min-width: 620px) and (max-width: 960px) {
+
+  #portfolio .portfolio-item .portfolio-info {
+    padding-top: 2em;
+  }
+}
+
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   color: #ffffff;
@@ -1184,9 +1197,10 @@ rgb(131, 198, 255) 50%,
 }
 
 .center {
-margin:auto;
-width: 50%;
+  margin: auto;
+  width: 50%;
 }
+
 .portfolio-details .portfolio-details-slider img {
   width: 80%;
 }
@@ -1213,6 +1227,7 @@ width: 50%;
 .swiper-button-left {
   background-color: #7eb8a7;
 }
+
 .portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(75, 74, 74, 0.08);
@@ -1279,7 +1294,7 @@ h4 {
   color: #6e6e6e;
   font-size: 1.6em;
   font-weight: 400;
-  margin-top:.4em;
+  margin-top: .4em;
   margin-bottom: .3em;
 }
 
@@ -1294,6 +1309,7 @@ h4 {
   font-size: 1.1em;
 
 }
+
 h4.project-info {
   font-size: 15pt;
   color: #898989;
@@ -1317,25 +1333,34 @@ h4.project-info {
   margin-bottom: 1em;
 }
 
+img.no-margin {
+  margin: 0;
+}
+
 img.persona1 {
   min-width: 350px;
-  max-height: 340px; 
+  max-height: 340px;
   border-radius: 10px;
 }
 
 img.persona2 {
   min-width: 350px;
-  max-height: 240px; 
+  max-height: 240px;
   border-radius: 10px;
 }
 
-.portfolio-project p{
+.portfolio-project p {
   line-height: 1.5em;
+}
+img.height-270 {
+  max-height: 270px;
+  width: auto;
 }
 p.center {
   font-size: .9em;
   text-align: center;
 }
+
 ol,
 ul {
   line-height: 26px;
@@ -1355,10 +1380,10 @@ ul.circle li {
 }
 
 img.img-fit {
-max-height: 380px;
-/* min-height: 300px; */
-width: auto;  
-display: inline-block;
+  max-height: 380px;
+  /* min-height: 300px; */
+  width: auto;
+  display: inline-block;
 }
 
 p.text-small {
@@ -1366,30 +1391,35 @@ p.text-small {
   /* width: auto; */
   display: inline-block;
 }
+
 @media (min-width: 620px) and (max-width: 927px) {
   .col-lg-6 {
     width: 100%;
   }
+
   .col-md-8 {
     width: 100%;
   }
+
   img.img-fit {
     flex: 0 0 auto;
     width: 83.33333333%;
   }
-p.text-small {
-  flex: 0 0 auto;
-  width: 100%;}
-}
-  
-.portfolio-project br{
-    content: "";
-    margin: .5em;
-    display: block;
-  
+
+  p.text-small {
+    flex: 0 0 auto;
+    width: 100%;
+  }
 }
 
-.portfolio-project a{
+.portfolio-project br {
+  content: "";
+  margin: .5em;
+  display: block;
+
+}
+
+.portfolio-project a {
   margin-top: 1em;
   margin-bottom: .5em;
   /* padding-top: 2em; */
@@ -1397,13 +1427,13 @@ p.text-small {
   transition: .2s;
 }
 
-.portfolio-project a:hover{
+.portfolio-project a:hover {
   color: hotPink;
   /* font-weight: 400; */
 }
 
 .collapsible {
-  background-color: transparent; 
+  background-color: transparent;
   color: #7eb8a7;
   border: none;
   text-align: left;
@@ -1413,12 +1443,13 @@ p.text-small {
 }
 
 .collapsible:hover {
-color: hotpink;
+  color: hotpink;
 }
 
 .active {
   color: #7eb8a7;
 }
+
 .collapsible-text {
   padding: 0 18px;
   max-height: 0;
@@ -1426,6 +1457,7 @@ color: hotpink;
   transition: max-height 0.2s ease-out;
   font-size: 15px;
 }
+
 /*--------------------------------------------------------------
 # Journal
 --------------------------------------------------------------*/
