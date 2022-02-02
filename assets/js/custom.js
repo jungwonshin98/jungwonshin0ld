@@ -165,7 +165,7 @@ $(document).ready(function(){
 // $('.preloader').addClass('loaded');
 //     }, 5000);
     // $('.loader').fadeOut(5000);
-    $('.body').fadeOut(3000);
+    $('.body').fadeOut(2500);
 
     $('.menu-container').each(function(index) {
         $(this).find('.circle').attr('menu-link', index);
