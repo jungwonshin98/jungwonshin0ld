@@ -48,7 +48,18 @@
   <!-- Wow Animation -->
   <script src="https://cdnjs.cloudflare.com/ajasx/libs/wow/1.1.2/wow.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7GMTRGHE9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-P7GMTRGHE9');
+  </script>
 </head>
 
 <body>
@@ -146,7 +157,7 @@
                   business’ long-run average star rating and to help in their decision-making processes.
                   <br>
                   <em>Yelp Sentiment and Business Attribute Analysis project was done as the final project of Applied
-                  Machine Learning at Cornell Tech. </em>
+                    Machine Learning at Cornell Tech. </em>
                 </p>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
@@ -205,8 +216,8 @@
                 <figure>
                   <img src="assets/img/portfolio/yelp-ds/yelp-ds-fig1.png" class="col-md-6 img-fluid wow fadeInUp"
                     data-wow-delay=".6s" />
-                  <figcaption class="col-md-6 wow fadeInUp"
-                  data-wow-delay=".6s">Fig 1: Distribution of Stars</figcaption>
+                  <figcaption class="col-md-6 wow fadeInUp" data-wow-delay=".6s">Fig 1: Distribution of Stars
+                  </figcaption>
                 </figure>
                 We see here that there is a skew in our ratings towards positive ratings of 4 and 5 and acknowledge
                 that this can lead to issues when predicting on new reviews because the prediction may be skewed
