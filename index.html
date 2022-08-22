@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon-vertical.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -63,46 +63,54 @@
   </script>
 
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-N56M5PB');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N56M5PB');
+  </script>
   <!-- End Google Tag Manager -->
 </head>
 <!-- Preloader -->
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N56M5PB"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N56M5PB" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <div class="body">
+  <!-- ======= Loader ======= -->
+
+  <!-- <div class="body">
+    
     <div class="loader">
       <span></span>
       <span></span>
       <span></span>
-      <!-- <a class="loader" href="http://www.jungwonshin.com">Welcome, nice to meet you</a> -->
+      <a class="loader" href="http://www.jungwonshin.com">Welcome, nice to meet you</a>
     </div>
-  </div>
-  <!-- <div class="preloader">
-    <div class="sk-spinner sk-spinner-wordpress">
-         <span class="sk-inner-circle"></span>
-    </div>
-</div> -->
+  </div> -->
+
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><img src="assets/img/logo-shadow.png" alt="" class="img-fluid"></a>
+      <!-- <a href="index.html" class="logo"><img src="../assets/img/logo-fav.png"></a> -->
       <!-- Uncomment below if you prefer to use an text logo -->
-      <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
+      <h1 class="logo"><a class="logo" href="index.html">Jungwon Shin</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link  scrollto" href="#portfolio">Work</a></li>
+          <li><a class="nav-link scrollto active" href="#home">Work</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Play</span></a>
           <ul>
             <li><a href="#art">Art</a></li>
@@ -110,52 +118,37 @@
             <li><a href="#read">Reads</a></li>
           </ul>
         </li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+          <li><a class="nav-link scrollto" href="about.html">About</a></li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="home">
-
-    <div class="container">
+    <div class="container row justify-content-center">
       <div class="hero-content">
         <div class="col-lg-10 col-md-10">
-          <h1>Hi, I'm <span class="highlight">Jungwon</span> 👋 </h1>
-          <h2>A <a class="gradient">Designer</a>, <a class="gradient">Researcher</a>, and <a class="gradient">Data
-              Storyteller</a></h2>
+          <h1>Hi, I'm <span class="name">Jungwon</span> 👋 </h1>
+          <h3 class="intro">Product Designer looking for the next job 👀</h3>
+          <h3 class="intro">Previously, UX/UI Designer <a href="portfolio-walmart.html" class="walmart">@Walmart</a>
+          </h3>
+          <!-- <span class="highlight"></span>
+          <h3 class="intro"><a class="gradient">Walmart</a></h3> -->
+
           <!-- <h2>I <a href="#work">design</a>, develop, write, and tell stories.</h2> -->
           <!-- <h2>I am a Designer, Researcher, and Storyteller.
             <span class="typed" data-typed-items="Designer, Researcher, Storyteller"></span>
           </h2> -->
-          <p>I create thoughtful, context-aware, value-sensitive and human-centered design solutions. I'm passionate
-            about improving people's lives
-            through design.</p>
+
           <!-- <p>Designer, Data Storyteller, Researcher</p> -->
 
           <ul class="list-unstyled list-social">
-            <li><a href="https://www.twitter.com/_shin_jungwon"><i class="bi bi-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/_jungwon_shin/"><i class="bi bi-instagram"></i></a></li>
+            <!-- <li><a href="https://www.twitter.com/_shin_jungwon"><i class="bi bi-twitter"></i></a></li> -->
+            <!-- <li><a href="https://www.instagram.com/_jungwon_shin/"><i class="bi bi-instagram"></i></a></li> -->
             <li><a href="https://www.linkedin.com/in/jungwonshin/"><i class="bi bi-linkedin"></i></a></li>
           </ul>
         </div>
@@ -165,200 +158,117 @@
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <div id="about" class="paddsection">
-      <div class="container">
-        <div class="row justify-content-around">
-
-          <div class="col-lg-4 col-md-6 col-sm-8">
-
-            <div class="div-img-bg wow fadeInUp" data-wow-delay=".6s">
-              <div class="about-descr">
-                <p>
-                  <br>
-                  <br>
-                </p>
-              </div>
-              <div class="about-img">
-                <img src="assets/img/profile.jpg" class="img-fluid" alt="profile-img">
-              </div>
-            </div>
-            <div class="about-descr wow fadeInUp" data-wow-delay=".6s">
-              <p class="p-intro">
-                <br>
-                UX/UI Designer at Walmart
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-md-4">
-            <div class="iso-box wow fadeInUp" data-wow-delay=".8s">
-
-              <div class="about-descr">
-                <p class="p-heading">I currently work as the <span>UX/UI Designer</span> at Global Tech, Walmart.</p>
-                <p class="p-heading2">I'm a <span>product designer</span> and Human-Centered Interaction
-                  <span>researcher</span> based in NYC. I
-                  create a digital environment that is <span>user-centered</span>, <span>context-aware</span>, and
-                  <span>value-sensitive</span>.</p>
-                </p>
-                <p class="separator">I aspire to make a meaningful impact on people and the society, working at
-                  the intersection between technology, design, and accessibility.
-                  I design innovative, immersive, engaging, and empathetic
-                  experiences. I believe that data can make a meaningful societal impact, and it is the
-                  responsibility of the designers to consider such impacts on people, society, environment and to call
-                  for open discussions on the identified problems.
-                  <br>
-                  I like to investigate the relationship between people and technology through a variety of lenses.
-                  Informed by the social sciences theories, I design with consideration of the impact of information and
-                  communication technologies on both individual–people’s behavior and knowledge–and societal
-                  levels–culture, norms, policy, and legal implications.
-                </p>
-              </div>
-              <button class="custom-btn btn-resume"><a
-                  href="assets/img/Resume-JungwonShin-07212022.pdf"><span>Download</span><span>Resume</span></a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <!-- <div id="services">
-      <div class="container">
-
-        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-briefcase"></i>
-                <span>UI/UX DESIGN</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-card-checklist"></i>
-                <span>BRAND IDENTITY</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-bar-chart"></i>
-                <span>WEB DESIGN</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-binoculars"></i>
-                <span>MOBILE APPS</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-brightness-high"></i>
-                <span>Analytics</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-calendar4-week"></i>
-                <span>PHOTOGRAPHY</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </div>  -->
-    <!-- End Services Section -->
-
     <!-- ======= Portfolio Section ======= -->
     <div id="portfolio" class="paddsection">
-
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>Work</h2>
+      <div class="container row">
+        <div class="section-title">
+          <h2 class="work">Work</h2>
         </div>
       </div>
 
-      <div class="container">
+      <div class="container justify-content-center">
+        <!-- project 1 -->
+        <div class="row project">
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <!-- <li data-filter=".filter-app">App Design</li> -->
-              <li data-filter=".filter-branding">Branding</li>
-              <li data-filter=".filter-ds">Data Science</li>
-
-              <!-- <li data-filter=".filter-illustration">Illustration</li> -->
-              <!-- <li data-filter=".filter-print">Print</li> -->
-              <li data-filter=".filter-ml">Machine Learning</li>
-              <li data-filter=".filter-uxresearch">UX Research</li>
-
-              <li data-filter=".filter-web">Web Design</li>
-            </ul>
+          <div class="col-lg-5 col-md-10 col-sm-12 portfolio-item ftco-animate">
+            <a href="portfolio-walmart.html">
+              <h4>UX/UI Design</h4>
+              <h2>Walmart</h2>
+              <p>Integrated application for Walmart-corporate associates</p>
+            </a>
+          </div>
+          <div class="col-lg-5 col-md-10 col-sm-12 portfolio-item ftco-animate">
+              <a href="portfolio-walmart.html">
+                <img src="assets/img/portfolio/thumb-walmart.png" class="img-fluid portfolio-hero">
+              </a>
           </div>
         </div>
-        <div class="portfolio-container">
-          <div class="row">
-
-            <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-web filter-uxresearch">
-              <a href="portfolio-titanbooks.html">
-                <img src="assets/img/portfolio/titanbooks.png" class="img-fluid" alt="portfolio-titanbooks">
-                <div class="portfolio-info">
-                  <h4>Web Design</h4>
-                  <p>Use blockchain to decentralize the small business ecosystem.</p>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-branding filter-uxresearch">
+<br>
+<br>
+        <!-- project 2-->
+        <div class="row project">
+          <div class="col-lg-5 col-md-10 col-sm-12 portfolio-item ftco-animate">
+            <a href="portfolio-walmart.html">
+              <h4>UX Research</h4>
+              <h2>Athena</h2>
+              <p>Sustainability score dashboard </p>
+            </a>
+          </div>
+          <div class="col-lg-5 col-md-10 col-sm-12 portfolio-item ftco-animate">
               <a href="portfolio-scertify.html">
-                <img src="assets/img/portfolio/scertify1.png" class="img-fluid" alt="portfolio-scertify">
-                <div class="portfolio-info">
-                  <h4>Branding & Dashboard Design</h4>
-                  <p>Develop scoring system and help companies manage and track their sustainability programs.</p>
-                </div>
+                <img src="assets/img/portfolio/thumb-scertify.png" class="img-fluid portfolio-hero">
               </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-uxresearch">
-              <a href="portfolio-connect.html">
-                <img src="assets/img/portfolio/connect.png" class="img-fluid" alt="portfolio-connect">
-                <div class="portfolio-info">
-                  <h4>UX Strategy</h4>
-                  <p>Connect with others during a time of social distancing.</p>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-ds filter-ml">
-              <a href="portfolio-ds-yelp.html">
-                <img src="assets/img/portfolio/yelp-ds.png" class="img-fluid" alt="portfolio-yelp-ds">
-                <div class="portfolio-info">
-                  <h4>Data Analysis & Machine Learning</h4>
-                  <p>Help business owners better understand their customer in terms of reviews and business attributes.
-                  </p>
-                </div>
-              </a>
-            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!---------------------------------- OLD ------------------------------------>
+
+    <!---------------------------------------------------------------------->
+    <!-- <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App Design</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-ds">Data Science</li>
+
+            <li data-filter=".filter-illustration">Illustration</li>
+            <li data-filter=".filter-print">Print</li>
+            <li data-filter=".filter-ml">Machine Learning</li>
+            <li data-filter=".filter-uxresearch">UX Research</li>
+
+            <li data-filter=".filter-web">Web Design</li>
+          </ul>
+        </div>
+      </div>
+      <div class="portfolio-container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-web filter-uxresearch">
+            <a href="portfolio-titanbooks.html">
+              <img src="assets/img/portfolio/titanbooks.png" class="img-fluid" alt="portfolio-titanbooks">
+              <div class="portfolio-info">
+                <h4>Web Design</h4>
+                <p>Use blockchain to decentralize the small business ecosystem.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-branding filter-uxresearch">
+            <a href="portfolio-scertify.html">
+              <img src="assets/img/portfolio/scertify1.png" class="img-fluid" alt="portfolio-scertify">
+              <div class="portfolio-info">
+                <h4>Branding & Dashboard Design</h4>
+                <p>Develop scoring system and help companies manage and track their sustainability programs.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-uxresearch">
+            <a href="portfolio-connect.html">
+              <img src="assets/img/portfolio/connect.png" class="img-fluid" alt="portfolio-connect">
+              <div class="portfolio-info">
+                <h4>UX Strategy</h4>
+                <p>Connect with others during a time of social distancing.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 portfolio-item filter-ds filter-ml">
+            <a href="portfolio-ds-yelp.html">
+              <img src="assets/img/portfolio/yelp-ds.png" class="img-fluid" alt="portfolio-yelp-ds">
+              <div class="portfolio-info">
+                <h4>Data Analysis & Machine Learning</h4>
+                <p>Help business owners better understand their customer in terms of reviews and business attributes.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
+    </div> -->
     <!-- End Portfolio Section -->
 
     <!-- ======= Journal Section ======= -->
@@ -428,7 +338,9 @@
 
     </div> -->
     <!-- End Journal Section -->
+    <!---------------------------------------------------------------------->
 
+    <!---------------------------------------------------------------------->
     <!-- ======= Contact Section ======= -->
     <div id="contact" class="paddsection">
       <div class="container">
@@ -443,7 +355,7 @@
                   <ul class="contact-details">
                     <!-- <li><span>New York, United States</span></li> -->
                     <!-- <li><span>+1 2019661325</span></li> -->
-                    <li><a class="email"
+                    <li><a class="gradient"
                         href="mailto: jungwon.shin98@gmail.com"><span><b>jungwon.shin98@gmail.com</b></span></a></li>
                   </ul>
                 </p>
@@ -454,7 +366,7 @@
               <p class="email">If you want to talk about design, human-centered design, human-aritificial-intelligence
                 design, accessibility, context-aware and value-sensitive design, food reviews, books, writing,
                 sustainability, or fun ideas,</p>
-              <h3>Shoot me an <a class="email" href="mailto: jungwon.shin98@gmail.com">Email!</a></h3>
+              <h3>Shoot me an <a class="gradient" href="mailto: jungwon.shin98@gmail.com">Email!</a></h3>
             </div>
             <!-- <div class="col-lg-6">
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
@@ -511,8 +423,8 @@
     <div class="container">
       <div class="socials-media text-center">
         <ul class="list-unstyled">
-          <li><a href="https://www.twitter.com/_shin_jungwon"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="https://www.instagram.com/_jungwon_shin/"><i class="bi bi-instagram"></i></a></li>
+          <!-- <li><a href="https://www.twitter.com/_shin_jungwon"><i class="bi bi-twitter"></i></a></li> -->
+          <!-- <li><a href="https://www.instagram.com/_jungwon_shin/"><i class="bi bi-instagram"></i></a></li> -->
           <li><a href="https://www.linkedin.com/in/jungwonshin/"><i class="bi bi-linkedin"></i></a></li>
         </ul>
       </div>
