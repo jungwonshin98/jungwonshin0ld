@@ -491,7 +491,6 @@ p.copyrights {
 }
 #header .logo a:hover { 
   color: var(--secondary);
-  background-color: ;
 }
 #header .logo img {
   max-height: 40px;
