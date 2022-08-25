@@ -24,6 +24,8 @@
   --lightsecondary: #FFFD61;
   --darksecondary: #C79A00;
   --walmartblue: #0071DC;
+  --secondary-gradient: linear-gradient(170deg, var(--lightsecondary) 0%, var(--secondary) 50%, var(--darksecondary) 75%, var(--lightprimary) 100%);
+
 }
 
 body {
@@ -48,13 +50,16 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--gray);
   font-family: "Poppins";
   margin: 0;
 }
 
 h1 {
   line-height: 1.6em;
+  color: var(--darkgray);
 }
+
 
 h2 {
   font-weight: 600;
@@ -64,6 +69,12 @@ h2.work {
   color: var(--gray);
   font-weight: 800;
   text-transform: uppercase;
+}
+
+h2.about { 
+  font-family: "Poppins";
+  color: var(--gray);
+  line-height: 1.3em;
 }
 
 h3.intro {
@@ -835,14 +846,23 @@ p.copyrights {
 
 span.highlight {
   display: inline-block;
+  /* color: var(--white); */
   background-position-y: 100%;
-  background-image: linear-gradient(transparent 50%, var(--lightprimary) 50%);
+  background-color: var(--secondary);
+  /* background-image: var(--favicon-gradient); */
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: 180% 2em;
-  transition: background-size .2s ease;
+  transition: .2s ease;
+  letter-spacing: 1px;
+  line-height: 1.5em;
 }
 
+/* span.highlight:hover { 
+  color:var(--darkgray);
+  background-color: var(--secondary);
+  background-image: none;
+} */
 span.name { 
   color: var(--primary);
   letter-spacing: 1px;
@@ -1016,7 +1036,7 @@ rgb(131, 198, 255) 50%,
 
 #about .about-descr .p-heading {
   font-family: "Open Sans", serif;
-  font-size: 2em;
+  font-size: 1.2em;
   text-align: left;
   line-height: 1.4em;
   margin-bottom: .4em;
@@ -1030,7 +1050,6 @@ rgb(131, 198, 255) 50%,
   font-family: "Open Sans", serif;
   font-size: 1.2em;
   text-align: left;
-  line-height: 1.4em;
   /* font-weight: 400; */
 }
 
@@ -1042,6 +1061,49 @@ rgb(131, 198, 255) 50%,
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
+}
+
+#about #funsies .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+#about #funsies .column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+#about #funsies .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  #about #funsies .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #about #funsies .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+#about img {
+  object-fit: contain;
 }
 
 .custom-btn {
