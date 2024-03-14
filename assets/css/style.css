@@ -24,6 +24,7 @@
   --lightsecondary: #FFFD61;
   --darksecondary: #C79A00;
   --walmartblue: #0071DC;
+  --thermored: #ef4135;
   --secondary-gradient: linear-gradient(170deg, var(--lightsecondary) 0%, var(--secondary) 50%, var(--darksecondary) 75%, var(--lightprimary) 100%);
 
 }
@@ -97,6 +98,15 @@ h3.intro a.walmart {
 h3.intro a.walmart:hover { 
   color: var(--secondary);
 }
+
+h3.intro a.thermo { 
+  color: var(--thermored);
+}
+
+h3.intro a.thermo:hover { 
+  color: var(--secondary);
+}
+
 h4 {
   color: var(--black);
   font-size: 14px;
